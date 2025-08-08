@@ -1,0 +1,509 @@
+/* Connecteur Corail - Admin Styles */
+
+/* === LAYOUT === */
+.connecteur-corail-admin {
+    margin-right: 20px;
+}
+
+.connecteur-corail-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* === CARDS & PANELS === */
+.connecteur-corail-card {
+    background: #fff;
+    border: 1px solid #c3c4c7;
+    border-radius: 4px;
+    padding: 0;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+
+.connecteur-corail-card-header {
+    background: #f6f7f7;
+    border-bottom: 1px solid #c3c4c7;
+    padding: 15px 20px;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1d2327;
+}
+
+.connecteur-corail-card-content {
+    padding: 20px;
+}
+
+.connecteur-corail-card-content p {
+    margin: 0 0 15px 0;
+    color: #646970;
+}
+
+/* === FORMS === */
+.connecteur-corail-form-section {
+    margin-bottom: 25px;
+}
+
+.connecteur-corail-form-section:last-child {
+    margin-bottom: 0;
+}
+
+.connecteur-corail-form-section h3 {
+    margin: 0 0 15px 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: #1d2327;
+    border-bottom: 1px solid #dcdcde;
+    padding-bottom: 8px;
+}
+
+.connecteur-corail-form-row {
+    margin-bottom: 15px;
+}
+
+.connecteur-corail-form-row label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #1d2327;
+}
+
+
+.connecteur-corail-form-row input[type="text"]:focus,
+.connecteur-corail-form-row input[type="time"]:focus,
+.connecteur-corail-form-row select:focus {
+    border-color: #2271b1;
+    outline: 2px solid transparent;
+    box-shadow: 0 0 0 1px #2271b1;
+}
+
+.connecteur-corail-form-row .description {
+    margin-top: 5px;
+    font-size: 13px;
+    color: #646970;
+    font-style: italic;
+}
+
+/* === CHECKBOX GROUP === */
+.connecteur-corail-checkbox-group {
+    max-height: 150px;
+    overflow-y: auto;
+    border: 1px solid #dcdcde;
+    border-radius: 4px;
+    padding: 10px;
+    background: #f9f9f9;
+}
+
+.connecteur-corail-checkbox-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: normal;
+    font-size: 13px;
+}
+
+.connecteur-corail-checkbox-group input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+/* === BUTTONS === */
+.connecteur-corail-btn {
+    border: 1px solid;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.connecteur-corail-btn:disabled {
+    background: #c3c4c7 !important;
+    border-color: #c3c4c7 !important;
+    cursor: not-allowed;
+}
+
+.connecteur-corail-btn-primary {
+    background: #2271b1;
+    border-color: #2271b1;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
+.connecteur-corail-btn-primary:hover:not(:disabled) {
+    background: #135e96;
+    border-color: #135e96;
+    color: #fff;
+}
+
+.connecteur-corail-btn-secondary {
+    background: #646970;
+    border-color: #646970;
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 13px;
+}
+
+.connecteur-corail-btn-secondary:hover:not(:disabled) {
+    background: #50575e;
+    border-color: #50575e;
+    color: #fff;
+}
+
+/* === FILE INPUT === */
+.connecteur-corail-file-input {
+    margin-bottom: 15px;
+    padding: 8px;
+    border: 2px dashed #c3c4c7;
+    border-radius: 4px;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.connecteur-corail-file-input input[type="file"] {
+    margin-bottom: 10px;
+}
+
+/* === RESULTS === */
+.connecteur-corail-result {
+    margin-top: 15px;
+}
+
+.connecteur-corail-result .notice {
+    margin: 0;
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+
+.connecteur-corail-result .notice-success {
+    background: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+}
+
+.connecteur-corail-result .notice-error {
+    background: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+}
+
+/* === TABLES === */
+.connecteur-corail-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.connecteur-corail-table th,
+.connecteur-corail-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #dcdcde;
+}
+
+.connecteur-corail-table th {
+    background: #f6f7f7;
+    font-weight: 600;
+    color: #1d2327;
+}
+
+.connecteur-corail-table tr:hover {
+    background: #f6f7f7;
+}
+
+/* Log type styles */
+.log-type {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 11px;
+    padding: 2px 6px;
+    border-radius: 3px;
+}
+
+.log-type-success {
+    background: #d4edda;
+    color: #155724;
+}
+
+.log-type-error {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.log-type-info {
+    background: #d1ecf1;
+    color: #0c5460;
+}
+
+/* Download links */
+.download-links {
+    margin-top: 15px;
+    padding: 15px;
+    background: #f9f9f9;
+    border: 1px solid #dcdcde;
+    border-radius: 4px;
+}
+
+.download-links p {
+    margin: 0 0 10px 0;
+}
+
+.download-links p:last-child {
+    margin-bottom: 0;
+}
+
+.download-links .button {
+    margin-right: 10px;
+}
+
+/* === UTILITIES === */
+.connecteur-corail-no-content {
+    text-align: center;
+    padding: 40px 20px;
+    color: #646970;
+    font-style: italic;
+}
+
+.connecteur-corail-save-section {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #dcdcde;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 1024px) {
+    .connecteur-corail-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* === LEGACY COMPATIBILITY === */
+/* Ces classes sont maintenues pour la compatibilité avec le code existant */
+.connecteur-corail-left-panel,
+.connecteur-corail-right-panel {
+    /* Utilise maintenant les classes card génériques */
+    display: flex;
+    flex-direction: column;
+}
+
+.connecteur-corail-panel-header {
+    /* Alias pour card-header */
+    background: #f6f7f7;
+    border-bottom: 1px solid #c3c4c7;
+    padding: 15px 20px;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1d2327;
+}
+
+.connecteur-corail-panel-content {
+    /* Alias pour card-content */
+    padding: 20px;
+}
+
+.connecteur-corail-action-card {
+    /* Alias pour card */
+    background: #fff;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+.connecteur-corail-action-card.grow {
+    flex-grow: 1;
+}
+
+.connecteur-corail-action-header {
+    /* Alias pour card-header */
+    padding: 15px 20px;
+    margin: 0;
+    font-size: 17px;
+    font-weight: 600;
+    color: #1d2327;
+}
+
+.connecteur-corail-action-content {
+    /* Alias pour card-content */
+    padding: 20px;
+}
+.connecteur-corail-action-content ul {
+    /* Restaurer les styles de liste */
+    list-style: disc;
+    padding-left: 20px;
+    margin: 0;
+}
+.connecteur-corail-action-content pre code {
+    display: block;
+}
+
+.connecteur-corail-export-button {
+    /* Alias pour btn-primary */
+    background: #2271b1;
+    border: 1px solid #2271b1;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.connecteur-corail-export-button:hover {
+    background: #135e96;
+    border-color: #135e96;
+}
+
+.connecteur-corail-export-button:disabled {
+    background: #c3c4c7;
+    border-color: #c3c4c7;
+    cursor: not-allowed;
+}
+
+.connecteur-corail-import-button {
+    /* Alias pour btn-secondary */
+    background: #646970;
+    border: 1px solid #646970;
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 13px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.connecteur-corail-import-button:hover:not(:disabled) {
+    background: #50575e;
+    border-color: #50575e;
+}
+
+.connecteur-corail-import-button:disabled {
+    background: #c3c4c7;
+    border-color: #c3c4c7;
+    cursor: not-allowed;
+}
+.logs-container {
+    overflow-y: scroll;
+    max-height: 1000px;
+}
+.connecteur-corail-logtype-success {
+    color: darkgreen;
+}
+.connecteur-corail-logtype-error {
+    color: darkred;
+}
+.connecteur-corail-no-logs {
+    /* Alias pour no-content */
+    text-align: center;
+    padding: 40px 20px;
+    color: #646970;
+    font-style: italic;
+}
+
+.connecteur-corail-save-settings {
+    /* Alias pour save-section */
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #dcdcde;
+}
+
+.connecteur-corail-save-button {
+    /* Alias pour btn-primary */
+    background: #2271b1;
+    border: 1px solid #2271b1;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.connecteur-corail-save-button:hover {
+    background: #135e96;
+    border-color: #135e96;
+}
+
+/* === STATUS MAPPING === */
+.connecteur-corail-status-mapping {
+    border: 1px solid #dcdcde;
+    border-radius: 4px;
+    background: #fff;
+}
+
+.connecteur-corail-mapping-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    gap: 10px;
+    align-items: center;
+    padding: 12px 15px;
+    background: #f6f7f7;
+    border-bottom: 1px solid #dcdcde;
+    font-weight: 600;
+    color: #1d2327;
+    font-size: 13px;
+}
+
+.connecteur-corail-mapping-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    gap: 10px;
+    align-items: center;
+    padding: 10px 15px;
+    border-bottom: 1px solid #f0f0f1;
+}
+
+.connecteur-corail-mapping-row:last-child {
+    border-bottom: none;
+}
+
+.connecteur-corail-mapping-row:nth-child(even) {
+    background: #f9f9f9;
+}
+
+.connecteur-corail-mapping-row .corail-status-input {
+    width: 100%;
+    padding: 6px 8px;
+    border: 1px solid #dcdcde;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+.connecteur-corail-mapping-row .wc-status-select {
+    width: 100%;
+    padding: 6px 8px;
+    border: 1px solid #dcdcde;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+.connecteur-corail-mapping-row .remove-mapping-row {
+    color: #b32d2e;
+    text-decoration: none;
+    padding: 4px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+.connecteur-corail-mapping-row .remove-mapping-row:hover {
+    background: #b32d2e;
+    color: #fff;
+}
+
+#add-mapping-row {
+    margin-top: 10px;
+}
+
+.connecteur-corail-status-mapping + .description {
+    margin-top: 8px;
+    font-size: 13px;
+    color: #646970;
+    font-style: italic;
+}

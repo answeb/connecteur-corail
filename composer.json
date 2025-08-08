@@ -1,0 +1,32 @@
+{
+    "name": "answeb/connecteur-corail",
+    "description": "Plugin WordPress pour exporter les données clients et commandes WooCommerce vers un ERP Corail au format CSV",
+    "type": "wordpress-plugin",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Answeb",
+            "homepage": "https://www.answeb.net"
+        }
+    ],
+    "require": {
+        "php": ">=8.0"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.7",
+        "phpcompatibility/php-compatibility": "^9.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Answeb\\ConnecteurCorail\\": "src/"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    },
+    "scripts": {
+        "phpcs": "phpcs --standard=PSR12 src/",
+        "phpcs-fix": "phpcbf --standard=PSR12 src/"
+    }
+}
