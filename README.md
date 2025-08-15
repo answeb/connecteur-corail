@@ -35,14 +35,6 @@ Il est suffisamment configurable pour couvrir les besoins de l'ERP Corail.
 6. Cliquer sur **Activer l'extension**
 7. Accéder aux réglages via **WooCommerce > Connecteur Corail**
 
-### Installation via le répertoire WordPress (si publié)
-
-1. Se connecter à l'administration WordPress
-2. Aller dans **Extensions > Ajouter une extension**
-3. Rechercher "Connecteur Corail"
-4. Cliquer sur **Installer maintenant** puis **Activer**
-5. Accéder aux réglages via **WooCommerce > Connecteur Corail**
-
 ## Capture d'écran
 
 ![screenshot](screenshot.jpg)
@@ -218,6 +210,6 @@ Corail est un ERP dévelopép par la société [ICS Coop](https://ics-coop.fr/co
 Gestion Commerciale destinées aux caves coopératives, domaines et châteaux, négociants et courtiers pour la gestion de :
 commandes, facturation, préparation, logistique, entrepôt, EDI, traçabilité…
 
-### Documentation, FAQs, and More
+### Contribution
 
-If you’re interested in writing any documentation or creating tutorials please let me know .
+Les contributions sont les bienvenues ! Si vous souhaitez contribuer à ce projet, faites une pull request sur la branche develop. Vous devriez également ouvrir une issue pour documenter votre contribution.
